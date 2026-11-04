@@ -3,7 +3,7 @@ layout: default
 ---
 <div class="hero py-5">
   <div class="container">
-    <p class="stage-label mb-2">A playbook from API Evangelist</p>
+    <p class="stage-label mb-2">A playbook from API Evangelist &amp; <a href="https://www.linkedin.com/posts/the-cuny-office-of-research-is-pleased-to-share-7485332341750640641-znak/">Ryan Geftman-Gold</a></p>
     <h1>APIs for Academic Research</h1>
     <p class="lead mb-0" style="max-width: 46rem;">How universities can use web APIs to get research out of the journal and into the world, and how what the world does with it can come back to strengthen the research.</p>
   </div>
@@ -41,7 +41,7 @@ layout: default
 
       <section class="pb" id="summary">
         <h2>Executive summary</h2>
-        <p>This page comes out of a conversation between Ryan Geftman-Gold and me, Kin Lane, about how much brilliant work inside universities never reaches the people who could use it. A university is an industrial research lab: full of scientists, PhDs and sometimes Nobel laureates. Too often the work stops at publication, because publishing is what academia rewards.</p>
+        <p>This page comes out of a conversation between <a href="https://www.linkedin.com/posts/the-cuny-office-of-research-is-pleased-to-share-7485332341750640641-znak/">Ryan Geftman-Gold</a> and me, Kin Lane, about how much brilliant work inside universities never reaches the people who could use it. A university is an industrial research lab: full of scientists, PhDs and sometimes Nobel laureates. Too often the work stops at publication, because publishing is what academia rewards.</p>
         <p>Web APIs are how nearly every technology of this century reaches people. They're how payments, messaging, maps, commerce and AI got into the apps we use every day. The same approach can take a research group's data, models and tools and make them available to other researchers, companies, developers and communities.</p>
         <p>This playbook lays out five stages for doing that: <strong>assess</strong> what you have, <strong>pilot</strong> a first API, <strong>scale</strong> it to a community, <strong>sustain</strong> it as a dependable service, and build the <strong>feedback loops</strong> that bring real-world use back to the research. It's a living document. Each assessment we do will improve it.</p>
       </section>
@@ -49,18 +49,28 @@ layout: default
       <section class="pb" id="why-apis">
         <h2>Why APIs matter</h2>
         <p>An API isn't rocket science. It's the web, serving JSON instead of HTML, so software can read it as easily as people read a web page. Universities already run on APIs: library systems, student information systems, learning management systems, research computing, and now AI.</p>
-        <p>The private sector shows what happens when valuable capabilities become APIs. Stripe made payments something any developer could add in an afternoon. Twilio did the same for phone and text messaging. Salesforce, eBay and Facebook grew whole ecosystems of partners by opening their platforms. Research data and methods can work the same way.</p>
+        <p>The private sector shows what happens when valuable capabilities become APIs. <a href="https://apis.io/providers/stripe/">Stripe</a> made payments something any developer could add in an afternoon. <a href="https://apis.io/providers/twilio/">Twilio</a> did the same for phone and text messaging. <a href="https://apis.io/providers/salesforce/">Salesforce</a>, <a href="https://apis.io/providers/ebay/">eBay</a> and <a href="https://apis.io/providers/facebook/">Facebook</a> grew whole ecosystems of partners by opening their platforms. Research data and methods can work the same way.</p>
         <p>Plenty of research infrastructure already works this way. Researchers use these APIs every day:</p>
         <ul>
-          <li><a href="https://www.ncbi.nlm.nih.gov/books/NBK25501/">PubMed and NCBI E-utilities</a>: biomedical literature and sequence data</li>
-          <li><a href="https://clinicaltrials.gov/data-api/api">ClinicalTrials.gov</a>: registered clinical studies</li>
-          <li><a href="https://api.reporter.nih.gov/">NIH RePORTER</a>: funded research projects</li>
-          <li><a href="https://info.orcid.org/documentation/features/public-api/">ORCID</a>, <a href="https://www.crossref.org/documentation/retrieve-metadata/rest-api/">Crossref</a> and <a href="https://docs.openalex.org/">OpenAlex</a>: researchers, publications and citations</li>
-          <li><a href="https://fdc.nal.usda.gov/api-guide">USDA FoodData Central</a>: food composition and nutrients</li>
-          <li><a href="https://www.census.gov/data/developers.html">US Census Bureau</a>: population and economic data</li>
+          <li><a href="https://apis.io/providers/pubmed/">PubMed</a> and <a href="https://apis.io/providers/ncbi/">NCBI</a>: biomedical literature and sequence data</li>
+          <li><a href="https://apis.io/providers/clinical-trials-gov/">ClinicalTrials.gov</a>: registered clinical studies</li>
+          <li><a href="https://apis.io/providers/nih/">NIH</a>: funded research projects (RePORTER), and more</li>
+          <li><a href="https://apis.io/providers/orcid/">ORCID</a>, <a href="https://apis.io/providers/crossref/">Crossref</a> and <a href="https://apis.io/providers/openalex/">OpenAlex</a>: researchers, publications and citations</li>
+          <li><a href="https://apis.io/providers/fooddata-central/">USDA FoodData Central</a>: food composition and nutrients</li>
+          <li><a href="https://apis.io/providers/us-census-bureau/">US Census Bureau</a>: population and economic data</li>
         </ul>
-        <p>Universities publish APIs too. The <a href="https://apis.io/providers/university-of-waterloo/">University of Waterloo</a> publishes 20 of them, and they're cataloged on <a href="https://apis.io">APIs.io</a>.</p>
-        <p>The Census Bureau story shows what's possible. When I first talked with them in 2011, they wouldn't do an API: it was census data, and they couldn't put opinions on it. But plenty of people were already downloading the data and using it, and the Bureau had no way to hear from them. When they finally launched an API, they found a long tail of users doing interesting things, and that feedback changed how they ran the census.</p>
+        <p>Universities publish APIs too. These are some of the university API portals I track on API Evangelist:</p>
+        <ul>
+          <li><a href="https://providers.apievangelist.com/providers/university-of-waterloo/">University of Waterloo</a></li>
+          <li><a href="https://providers.apievangelist.com/providers/stanford/">Stanford University</a></li>
+          <li><a href="https://providers.apievangelist.com/providers/uc-davis/">University of California, Davis</a></li>
+          <li><a href="https://providers.apievangelist.com/providers/ucsd/">University of California, San Diego</a></li>
+          <li><a href="https://providers.apievangelist.com/providers/university-of-wisconsin-madison/">University of Wisconsin-Madison</a></li>
+          <li><a href="https://providers.apievangelist.com/providers/university-of-cambridge/">University of Cambridge</a></li>
+          <li><a href="https://providers.apievangelist.com/providers/university-of-helsinki/">University of Helsinki</a></li>
+          <li><a href="https://providers.apievangelist.com/providers/ubc/">University of British Columbia</a></li>
+        </ul>
+        <p>The Census Bureau story shows what's possible. When I first talked with them in 2011, they wouldn't do an API: it was census data, and they couldn't put opinions on it. But plenty of people were already downloading the data and using it, and the Bureau had no way to hear from them. When they finally launched an API, they found a long tail of users doing interesting things, and that feedback changed how they ran the census. I wrote about it at the time in <a href="https://apievangelist.com/2014/06/04/how-will-the-us-census-bureau-api-influence-the-2020-census/">How Will The US Census Bureau API Influence the 2020 Census?</a></p>
       </section>
 
       <section class="pb" id="stages">
