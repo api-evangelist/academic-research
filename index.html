@@ -1,0 +1,138 @@
+---
+layout: default
+---
+<div class="hero py-5">
+  <div class="container">
+    <p class="stage-label mb-2">A playbook from API Evangelist</p>
+    <h1>APIs for Academic Research</h1>
+    <p class="lead mb-0" style="max-width: 46rem;">How universities can use web APIs to get research out of the journal and into the world, and how what the world does with it can come back to strengthen the research.</p>
+  </div>
+</div>
+
+<div class="container mt-4">
+  <div class="row">
+    <nav class="col-lg-3 d-none d-lg-block">
+      <div class="side-nav">
+        <a href="#summary">Executive summary</a>
+        <a href="#why-apis">Why APIs matter</a>
+        <a href="#stages">The stages at a glance</a>
+        <a href="#assess">1. Assess</a>
+        <a href="#pilot">2. Pilot</a>
+        <a href="#scale">3. Scale</a>
+        <a href="#sustain">4. Sustain</a>
+        <a href="#impact">5. Feedback &amp; impact</a>
+        <a href="#next">Repeat and grow</a>
+        <a href="#assessment" class="mt-3 fw-semibold">Request an assessment</a>
+      </div>
+    </nav>
+
+    <div class="col-lg-9">
+      <select class="form-select d-lg-none mb-3" aria-label="Jump to section" onchange="location.hash=this.value">
+        <option value="summary">Executive summary</option>
+        <option value="why-apis">Why APIs matter</option>
+        <option value="stages">The stages at a glance</option>
+        <option value="assess">1. Assess</option>
+        <option value="pilot">2. Pilot</option>
+        <option value="scale">3. Scale</option>
+        <option value="sustain">4. Sustain</option>
+        <option value="impact">5. Feedback &amp; impact</option>
+        <option value="next">Repeat and grow</option>
+      </select>
+
+      <section class="pb" id="summary">
+        <h2>Executive summary</h2>
+        <p>This page comes out of a conversation between Ryan Geftman-Gold and me, Kin Lane, about how much brilliant work inside universities never reaches the people who could use it. A university is an industrial research lab: full of scientists, PhDs and sometimes Nobel laureates. Too often the work stops at publication, because publishing is what academia rewards.</p>
+        <p>Web APIs are how nearly every technology of this century reaches people. They're how payments, messaging, maps, commerce and AI got into the apps we use every day. The same approach can take a research group's data, models and tools and make them available to other researchers, companies, developers and communities.</p>
+        <p>This playbook lays out five stages for doing that: <strong>assess</strong> what you have, <strong>pilot</strong> a first API, <strong>scale</strong> it to a community, <strong>sustain</strong> it as a dependable service, and build the <strong>feedback loops</strong> that bring real-world use back to the research. It's a living document. Each assessment we do will improve it.</p>
+      </section>
+
+      <section class="pb" id="why-apis">
+        <h2>Why APIs matter</h2>
+        <p>An API isn't rocket science. It's the web, serving JSON instead of HTML, so software can read it as easily as people read a web page. Universities already run on APIs: library systems, student information systems, learning management systems, research computing, and now AI.</p>
+        <p>The private sector shows what happens when valuable capabilities become APIs. Stripe made payments something any developer could add in an afternoon. Twilio did the same for phone and text messaging. Salesforce, eBay and Facebook grew whole ecosystems of partners by opening their platforms. Research data and methods can work the same way.</p>
+        <p>Plenty of research infrastructure already works this way. Researchers use these APIs every day:</p>
+        <ul>
+          <li><a href="https://www.ncbi.nlm.nih.gov/books/NBK25501/">PubMed and NCBI E-utilities</a>: biomedical literature and sequence data</li>
+          <li><a href="https://clinicaltrials.gov/data-api/api">ClinicalTrials.gov</a>: registered clinical studies</li>
+          <li><a href="https://api.reporter.nih.gov/">NIH RePORTER</a>: funded research projects</li>
+          <li><a href="https://info.orcid.org/documentation/features/public-api/">ORCID</a>, <a href="https://www.crossref.org/documentation/retrieve-metadata/rest-api/">Crossref</a> and <a href="https://docs.openalex.org/">OpenAlex</a>: researchers, publications and citations</li>
+          <li><a href="https://fdc.nal.usda.gov/api-guide">USDA FoodData Central</a>: food composition and nutrients</li>
+          <li><a href="https://www.census.gov/data/developers.html">US Census Bureau</a>: population and economic data</li>
+        </ul>
+        <p>Universities publish APIs too. The <a href="https://apis.io/providers/university-of-waterloo/">University of Waterloo</a> publishes 20 of them, and they're cataloged on <a href="https://apis.io">APIs.io</a>.</p>
+        <p>The Census Bureau story shows what's possible. When I first talked with them in 2011, they wouldn't do an API: it was census data, and they couldn't put opinions on it. But plenty of people were already downloading the data and using it, and the Bureau had no way to hear from them. When they finally launched an API, they found a long tail of users doing interesting things, and that feedback changed how they ran the census.</p>
+      </section>
+
+      <section class="pb" id="stages">
+        <h2>The stages at a glance</h2>
+        <p>Research moves from discovery to real-world impact in stages, and so does an API. The stages connect, and they aren't strictly in order: what you learn at the end loops back to the beginning.</p>
+        <div class="table-responsive">
+          <table class="table align-middle">
+            <thead><tr><th>Stage</th><th>The question</th><th>What it produces</th></tr></thead>
+            <tbody>
+              <tr><td><strong>1. Assess</strong></td><td>What do you have, and who could use it?</td><td>An inventory, constraints, and likely audiences</td></tr>
+              <tr><td><strong>2. Pilot</strong></td><td>Can a few trusted users get value from it?</td><td>A first API design and a small pilot</td></tr>
+              <tr><td><strong>3. Scale</strong></td><td>Can many people use it without help?</td><td>Docs, onboarding, SDKs, discoverability</td></tr>
+              <tr><td><strong>4. Sustain</strong></td><td>Can people build on it with confidence?</td><td>Plans, licensing, versioning, support</td></tr>
+              <tr><td><strong>5. Feedback &amp; impact</strong></td><td>What is the world teaching the research?</td><td>Usage signals, partnerships, evidence of impact</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="small text-muted">Anyone working in health research will recognize the arc: it follows the movement from discovery to implementation to community impact. This playbook uses plain stages so any discipline can use it, including engineering, the sciences, the social sciences and the humanities.</p>
+      </section>
+
+      <section class="pb" id="assess">
+        <p class="stage-label mb-1">Stage 1</p>
+        <h2>Assess: what do you have?</h2>
+        <p class="pairing">Before designing anything, understand the research assets and who could use them.</p>
+        <p>Every research group has more than its papers: datasets, measurement instruments, models, code, reference tables, protocols and expertise. The assessment inventories them, then asks the practical questions: what format are they in, how big are they, who owns them, how are they licensed, and how sensitive are they (personal information, IRB constraints, embargoes)?</p>
+        <p>Next comes the outward-facing question: who uses this today, and who would use it if they could? Take a nutrition research dataset. Its likely users include other labs, clinicians, food manufacturers, grocery and meal-planning apps, digital health companies, and people building tools for themselves. Much research software and data still ships only as downloads or desktop applications, "without an API," which keeps most of those people out.</p>
+        <p>I map what you have against the API providers I track on <a href="https://apis.io">APIs.io</a>. That shows which existing APIs your work complements, and which communities are already looking for something like it.</p>
+        <p id="assessment" class="mt-3"><a class="cta" href="mailto:kin@apievangelist.com?subject=Research%20API%20assessment">Request an assessment</a></p>
+      </section>
+
+      <section class="pb" id="pilot">
+        <p class="stage-label mb-1">Stage 2</p>
+        <h2>Pilot: the first API</h2>
+        <p class="pairing">Start small, with trusted users, and learn before you scale.</p>
+        <p>The assessment becomes a design: the resources the API exposes, the vocabulary that describes them, and a machine-readable contract (OpenAPI) that people and software can both read. The first version should be modest. Read-only, openly licensed data is the easiest place to start.</p>
+        <p>An API doesn't have to start as infrastructure. It can be as simple as a well-structured JSON or CSV file published on GitHub, with notes on what it is and how to use it. Pilot it with a handful of trusted users, like a partner lab, a class or one outside collaborator, and watch what they do with it.</p>
+        <p>Safety belongs here, not as an afterthought: de-identification, consent, review-board approvals, access controls and rate limits.</p>
+      </section>
+
+      <section class="pb" id="scale">
+        <p class="stage-label mb-1">Stage 3</p>
+        <h2>Scale: onboarding and community</h2>
+        <p class="pairing">Make it work for many people who will never meet you.</p>
+        <p>Once a pilot works, the job is to make the API easy for strangers to use. That means a simple landing page or portal, clear documentation, a getting-started guide, working examples, client libraries in the languages your audience uses, and integrations with the tools they already have.</p>
+        <p>It doesn't matter how you make a pass, as long as it's easy for the receiver to catch. Your users shouldn't have to become experts in your field to benefit from your work. Make it discoverable too, by people searching the web and by AI agents. Machine-readable descriptions, an <code>llms.txt</code> file and listings in API catalogs all help.</p>
+        <p>Measure what matters: who signs up, what they call, and what they build.</p>
+      </section>
+
+      <section class="pb" id="sustain">
+        <p class="stage-label mb-1">Stage 4</p>
+        <h2>Sustain: the business of it</h2>
+        <p class="pairing">Turn a project into a dependable service people can build on.</p>
+        <p>People only build on what they can count on. This stage defines plans and access tiers, rate limits, licensing and terms, versioning, and how changes and retirements will be communicated. A common pattern is free access for research and education, with commercial terms for companies building products.</p>
+        <p>Done well, revenue and partnerships sustain the research rather than distract from it. They can fund maintenance, students and new work, and they put the research inside products used in clinics, classrooms, stores and homes.</p>
+      </section>
+
+      <section class="pb" id="impact">
+        <p class="stage-label mb-1">Stage 5</p>
+        <h2>Feedback &amp; impact</h2>
+        <p class="pairing">What an API community gives back to the researchers who steward the data.</p>
+        <p>This is the stage that matters most to researchers. An API creates feedback loops a publication never will. Partners, other institutions, companies and developers ask for things, report problems, combine your work with other sources, and show you uses you never imagined.</p>
+        <p>That feedback lets the core research iterate and evolve to meet the needs of specific markets and communities. It connects researchers who would never otherwise meet, across departments, campuses and institutions. And it produces evidence of real-world impact that funders, administrators and policymakers can see.</p>
+        <p>Then it loops back to the beginning: what you learn here shapes the next assessment.</p>
+      </section>
+
+      <section class="pb" id="next">
+        <h2>Repeat and grow</h2>
+        <p>This playbook will be built in the open and will change with every assessment. When an institution agrees, we'll add worked examples of what we found, what we built, and what happened next. The goal is a playbook any university can fork and use.</p>
+        <p>If your group has research data, content or tools that deserve a wider audience, I'd like to hear about it. We'll start by assessing what you have.</p>
+        <p><a class="cta" href="mailto:kin@apievangelist.com?subject=Research%20API%20assessment">Request an assessment</a></p>
+        <p class="small text-muted mt-3">Last updated November 4, 2026.</p>
+      </section>
+    </div>
+  </div>
+</div>

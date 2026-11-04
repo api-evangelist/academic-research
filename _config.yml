@@ -1,0 +1,4 @@
+title: APIs for Academic Research
+description: A playbook for using web APIs to move academic research beyond publication, from assessing what a research group has, through piloting and scaling an API, to the feedback loops that bring real-world use back to the research.
+url: https://academic-research.apievangelist.com
+exclude: [README.md, Gemfile, Gemfile.lock]
