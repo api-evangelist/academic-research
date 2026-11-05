@@ -1,6 +1,7 @@
 ---
 layout: doc
 title: CUNY API Inventory
+title_suffix: CUNY API Inventory
 kicker: A first pass by API Evangelist
 lead: What the City University of New York already publishes as APIs, across its 26 campuses, research centers and shared systems. It was compiled for Ryan Geftman-Gold on November 4, 2026.
 noindex: true
