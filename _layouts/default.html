@@ -5,6 +5,7 @@
   <title>{% if page.title_suffix %}{{ page.title_suffix }} · {% endif %}{{ site.title }} - API Evangelist</title>
   <meta name="description" content="{{ site.description | strip_html | truncate: 300 }}">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% if page.noindex %}<meta name="robots" content="noindex, nofollow">{% endif %}
   <link rel="canonical" href="{{ site.url }}{{ page.url }}">
 
   <!-- Open Graph -->
@@ -71,6 +72,11 @@
     .side-nav a { display: block; padding: .3rem 0; color: #495057; text-decoration: none; font-size: .92rem; }
     .side-nav a:hover { color: var(--ae-green); }
     .cta { background: var(--ae-green); color: #fff !important; border-radius: .4rem; padding: .6rem 1.1rem; text-decoration: none; display: inline-block; font-weight: 600; }
+    .doc h2 { font-size: 1.35rem; font-weight: 700; margin-top: 2rem; }
+    .doc table { width: 100%; margin: 1rem 0; font-size: .92rem; display: block; overflow-x: auto; }
+    .doc th, .doc td { border-bottom: 1px solid #e9ecef; padding: .5rem .4rem; vertical-align: top; }
+    .doc p, .doc li { line-height: 1.65; }
+    .doc .table-wrap { overflow-x: auto; }
   </style>
 </head>
 <body>
