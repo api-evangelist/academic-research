@@ -21,6 +21,7 @@ layout: default
         <a href="#scale">3. Scale</a>
         <a href="#sustain">4. Sustain</a>
         <a href="#impact">5. Feedback &amp; impact</a>
+        <a href="#story">Throughout: tell the story</a>
         <a href="#next">Repeat and grow</a>
         <a href="#assessment" class="mt-3 fw-semibold">Request an assessment</a>
       </div>
@@ -36,6 +37,7 @@ layout: default
         <option value="scale">3. Scale</option>
         <option value="sustain">4. Sustain</option>
         <option value="impact">5. Feedback &amp; impact</option>
+        <option value="story">Throughout: tell the story</option>
         <option value="next">Repeat and grow</option>
       </select>
 
@@ -43,7 +45,7 @@ layout: default
         <h2>Executive summary</h2>
         <p>This page comes out of a conversation between <a href="https://www.linkedin.com/posts/the-cuny-office-of-research-is-pleased-to-share-7485332341750640641-znak/">Ryan Geftman-Gold</a> and me, <a href="https://apievangelist.com/about/kin-lane/">Kin Lane</a>, about how much brilliant work inside universities never reaches the people who could use it. A university is an industrial research lab: full of scientists, PhDs and sometimes Nobel laureates. Too often the work stops at publication, because publishing is what academia rewards.</p>
         <p>Web APIs are how nearly every technology of this century reaches people. They're how payments, messaging, maps, commerce and AI got into the apps we use every day. The same approach can take a research group's data, models and tools and make them available to other researchers, companies, developers and communities.</p>
-        <p>This playbook lays out five stages for doing that: <strong>assess</strong> what you have, <strong>pilot</strong> a first API, <strong>scale</strong> it to a community, <strong>sustain</strong> it as a dependable service, and build the <strong>feedback loops</strong> that bring real-world use back to the research. It's a living document, and it's <a href="https://github.com/api-evangelist/academic-research">open and forkable on GitHub</a>. Each assessment we do will improve it.</p>
+        <p>This playbook lays out five stages for doing that: <strong>assess</strong> what you have, <strong>pilot</strong> a first API, <strong>scale</strong> it to a community, <strong>sustain</strong> it as a dependable service, and build the <strong>feedback loops</strong> that bring real-world use back to the research, <strong>telling the story</strong> all the way through. Most assessments begin before anything is public, while work is unpublished, patents are pending or the institution is still deciding what to share, and that's expected. It's a living document, and it's <a href="https://github.com/api-evangelist/academic-research">open and forkable on GitHub</a>. Each assessment we do will improve it.</p>
       </section>
 
       <section class="pb" id="why-apis">
@@ -80,11 +82,12 @@ layout: default
           <table class="table align-middle">
             <thead><tr><th>Stage</th><th>The question</th><th>What it produces</th></tr></thead>
             <tbody>
-              <tr><td><strong>1. Assess</strong></td><td>What do you have, and who could use it?</td><td>An inventory, constraints, and likely audiences</td></tr>
-              <tr><td><strong>2. Pilot</strong></td><td>Can a few trusted users get value from it?</td><td>A first API design and a small pilot</td></tr>
-              <tr><td><strong>3. Scale</strong></td><td>Can many people use it without help?</td><td>Docs, onboarding, SDKs, discoverability</td></tr>
-              <tr><td><strong>4. Sustain</strong></td><td>Can people build on it with confidence?</td><td>Plans, licensing, versioning, support</td></tr>
-              <tr><td><strong>5. Feedback &amp; impact</strong></td><td>What is the world teaching the research?</td><td>Usage signals, partnerships, evidence of impact</td></tr>
+              <tr><td><strong>1. Assess</strong></td><td>What do you have, and who could use it?</td><td>An inventory, the constraints, and an opportunity landscape with a proposal</td></tr>
+              <tr><td><strong>2. Pilot</strong></td><td>Can a few trusted users get value from it?</td><td>A layered API design and a small, vetted pilot</td></tr>
+              <tr><td><strong>3. Scale</strong></td><td>Can many people use it without help?</td><td>Docs, onboarding, access roles, discoverability</td></tr>
+              <tr><td><strong>4. Sustain</strong></td><td>Can people build on it with confidence?</td><td>Plans, licensing, provenance and AI terms, versioning</td></tr>
+              <tr><td><strong>5. Feedback &amp; impact</strong></td><td>What is the world teaching the research?</td><td>Usage signals, structure contributions, evidence of impact</td></tr>
+              <tr><td><strong>Throughout: tell the story</strong></td><td>Who needs to hear about this, and why?</td><td>Ongoing stories that bring partners to the table</td></tr>
             </tbody>
           </table>
         </div>
@@ -96,8 +99,10 @@ layout: default
         <h2>Assess: what do you have?</h2>
         <p class="pairing">Before designing anything, understand the research assets and who could use them.</p>
         <p>Every research group has more than its papers: datasets, measurement instruments, models, code, reference tables, protocols and expertise. The assessment inventories them, then asks the practical questions: what format are they in, how big are they, who owns them, how are they licensed, and how sensitive are they (personal information, IRB constraints, embargoes)?</p>
+        <p>Many assessments happen before anything is public. The work may be unpublished, a patent may be pending, a manuscript may be in progress, and the institution will want a say in what's shared. So the assessment runs as a private track first: intellectual property and patent status, publication plans, institutional approvals and licensing. Nothing is shared outside the team without the institution's agreement.</p>
         <p>Next comes the outward-facing question: who uses this today, and who would use it if they could? Take a nutrition research dataset. Its likely users include other labs, clinicians, food manufacturers, grocery and meal-planning apps, digital health companies, and people building tools for themselves. Much research software and data still ships only as downloads or desktop applications, "without an API," which keeps most of those people out.</p>
         <p>I map what you have against the API providers I track on <a href="https://apis.io">APIs.io</a>. That shows which existing APIs your work complements, and which communities are already looking for something like it.</p>
+        <p>The assessment produces an <strong>opportunity landscape and a proposal</strong>. The landscape covers who would use the work, the funded programs and existing APIs it complements, what comparable APIs charge, and the risks. The proposal says what to build first, for whom, and on what terms.</p>
         <p id="assessment" class="mt-3"><a class="cta" href="mailto:kin@apievangelist.com?subject=Research%20API%20assessment">Request an assessment</a></p>
       </section>
 
@@ -106,6 +111,7 @@ layout: default
         <h2>Pilot: the first API</h2>
         <p class="pairing">Start small, with trusted users, and learn before you scale.</p>
         <p>The assessment becomes a design: the resources the API exposes, the vocabulary that describes them, and a machine-readable contract (OpenAPI) that people and software can both read. The first version should be modest. Read-only, openly licensed data is the easiest place to start.</p>
+        <p>Research often has layers, and each can be its own part of an API: the vocabulary or domain model, the results (measurements, rankings, predictions), and the evidence and provenance behind each result. Publishing the vocabulary first lets people understand and align with the work before they see a single result. Pilots with outside partners can begin with sample or sandbox data under a simple agreement.</p>
         <p>An API doesn't have to start as infrastructure. It can be as simple as a well-structured JSON or CSV file published on GitHub, with notes on what it is and how to use it. Pilot it with a handful of trusted users, like a partner lab, a class or one outside collaborator, and watch what they do with it.</p>
         <p>Safety belongs here, not as an afterthought: de-identification, consent, review-board approvals, access controls and rate limits.</p>
       </section>
@@ -115,7 +121,9 @@ layout: default
         <h2>Scale: onboarding and community</h2>
         <p class="pairing">Make it work for many people who will never meet you.</p>
         <p>Once a pilot works, the job is to make the API easy for strangers to use. That means a simple landing page or portal, clear documentation, a getting-started guide, working examples, client libraries in the languages your audience uses, and integrations with the tools they already have.</p>
-        <p>It doesn't matter how you make a pass, as long as it's easy for the receiver to catch. Your users shouldn't have to become experts in your field to benefit from your work. Make it discoverable too, by people searching the web and by AI agents. Machine-readable descriptions, an <code>llms.txt</code> file and listings in API catalogs all help.</p>
+        <p>It doesn't matter how you make a pass, as long as it's easy for the receiver to catch. Your users shouldn't have to become experts in your field to benefit from your work. Make it discoverable too, by people searching the web and by AI agents. Machine-readable descriptions help. Those include an OpenAPI contract, a domain model or JSON-LD, a provenance schema, an <code>llms.txt</code> file, agent cards, published plans and rate limits, and listings in API catalogs.</p>
+        <p>Not everyone needs the same access. <strong>Readers</strong> use the data to build applications and analyses. <strong>Contributors</strong> are vetted and can add new data, with provenance as the condition for writing. <strong>Stewards</strong> are recognized experts who help evolve the structure itself. Each role gets its own vetting, terms and feedback channel.</p>
+        <p>Protect researchers' time. An open API attracts people building quick apps, many of them with AI, and their questions can turn a lab into a help desk. A sandbox, clear documentation, examples, a community forum and scheduled office hours keep the researchers doing research.</p>
         <p>Measure what matters: who signs up, what they call, and what they build.</p>
       </section>
 
@@ -124,6 +132,8 @@ layout: default
         <h2>Sustain: the business of it</h2>
         <p class="pairing">Turn a project into a dependable service people can build on.</p>
         <p>People only build on what they can count on. This stage defines plans and access tiers, rate limits, licensing and terms, versioning, and how changes and retirements will be communicated. A common pattern is free access for research and education, with commercial terms for companies building products.</p>
+        <p>Pricing can follow how the data is used. Options include a free sandbox or sample tier, paid access to specific parts of the data, volume-based plans, separate terms for training AI models, and institutional or partner licenses. There are usually two speeds to revenue. A developer community moves faster. Partnerships with established organizations take longer, but bring credibility.</p>
+        <p>Spell out <strong>provenance and AI terms</strong>. If trust in the research depends on its evidence trail, the terms should say what attribution and evidence an application must preserve or show, and whether the data may be used to train or ground AI models. Research with clear provenance can be an antidote to unsourced AI-generated text, but only if that provenance travels with the data.</p>
         <p>Done well, revenue and partnerships sustain the research rather than distract from it. They can fund maintenance, students and new work, and they put the research inside products used in clinics, classrooms, stores and homes.</p>
       </section>
 
@@ -132,8 +142,17 @@ layout: default
         <h2>Feedback &amp; impact</h2>
         <p class="pairing">What an API community gives back to the researchers who steward the data.</p>
         <p>This is the stage that matters most to researchers. An API creates feedback loops a publication never will. Partners, other institutions, companies and developers ask for things, report problems, combine your work with other sources, and show you uses you never imagined.</p>
+        <p>Feedback can shape the structure as well as the data. With a versioned API, vetted experts can help refine the vocabulary, the categories and the relationships, and the next version reflects what the community has learned.</p>
         <p>That feedback lets the core research iterate and evolve to meet the needs of specific markets and communities. It connects researchers who would never otherwise meet, across departments, campuses and institutions. And it produces evidence of real-world impact that funders, administrators and policymakers can see.</p>
         <p>Then it loops back to the beginning: what you learn here shapes the next assessment.</p>
+      </section>
+
+      <section class="pb" id="story">
+        <p class="stage-label mb-1">Throughout</p>
+        <h2>Tell the story</h2>
+        <p class="pairing">People can't build on research they never hear about.</p>
+        <p>Academic publishing is one channel, but it's slow and it reaches a narrow audience. Ongoing storytelling reaches the people who would actually use the work: posts about what the data shows, worked examples, and personal, condition-specific or community-specific stories that make an abstract resource feel useful.</p>
+        <p>Stories bring partners, developers and funders forward between papers. They also give researchers a way to explain their work on their own terms. Every stage of the playbook produces material for them.</p>
       </section>
 
       <section class="pb" id="next">
@@ -142,7 +161,7 @@ layout: default
         <p><strong>This playbook is forkable.</strong> The whole page lives in a public GitHub repository at <a href="https://github.com/api-evangelist/academic-research">github.com/api-evangelist/academic-research</a>. Fork it to adapt the stages for your own institution, or open an issue or pull request to suggest improvements.</p>
         <p>If your group has research data, content or tools that deserve a wider audience, I'd like to hear about it. We'll start by assessing what you have.</p>
         <p><a class="cta" href="mailto:kin@apievangelist.com?subject=Research%20API%20assessment">Request an assessment</a></p>
-        <p class="small text-muted mt-3">Last updated November 4, 2026.</p>
+        <p class="small text-muted mt-3">Last updated November 9, 2026.</p>
       </section>
     </div>
   </div>
